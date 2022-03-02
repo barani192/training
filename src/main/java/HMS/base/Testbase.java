@@ -76,7 +76,7 @@ public class Testbase {
 		}
 		
 		//basic methods
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(90));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(70));
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
