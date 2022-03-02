@@ -77,7 +77,7 @@ public class Testbase {
 		
 		//basic methods
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
-		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(70));
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(50));
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
 		driver.get(prop.getProperty("URL"));
@@ -91,7 +91,7 @@ public class Testbase {
 	
 	public void Explictwait(WebElement el)
 	{
-		WebDriverWait wt=new WebDriverWait(driver, Duration.ofSeconds(30));
+		WebDriverWait wt=new WebDriverWait(driver, Duration.ofSeconds(50));
 		wt.until(ExpectedConditions.invisibilityOf(el));
 	}
 	
